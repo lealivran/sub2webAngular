@@ -13,10 +13,10 @@
       .state('root', {
         views: {
           'header': {
-            template: '<div>Header</div>',
+            template: '<app-header></app-header>',
           },
           'footer': {
-            template: '<div>Footer</div>',
+            template: '<app-footer></app-footer>',
           }
         }
       });
@@ -32,6 +32,12 @@
 
   angular.module('app', [
       'ui.router',
+      'AppHeaderComponent',
+      'AppFooterComponent',
+      'movie-popular',
+      'movie-playing',
+      'info-movie',
+      'tv-popular',
       'home',
       'common.filters.uppercase',
       'common.interceptors.http',

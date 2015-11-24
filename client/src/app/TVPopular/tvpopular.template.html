@@ -1,0 +1,12 @@
+<div>
+	<h1> Popular TV shows </h1>
+
+	<div class="row">
+		<div data-ng-repeat="movie in ::vm.movies track by $index" class="col-lg-3">
+			<h2>{{ ::movie.original_title}}</h2>
+			<img data-ng-src="https://image.tmdb.org/t/p/w185{{ ::movie.poster_path}}">
+			<!-- <p> {{ ::movie.overview}} </p> -->
+
+		</div>
+	</div>
+</div>
